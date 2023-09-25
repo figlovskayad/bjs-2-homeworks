@@ -15,11 +15,11 @@ describe('Домашнее задание к занятию 1. «Основны�
 
   describe('Задача №2. Функция должна:', () => {
     it('верно считать кредит: кейс #1', () => {
-      expect(calculateTotalMortgage(10, 0, 50000, 12).toFixed(2)).toEqual(52749.53);
+      expect(calculateTotalMortgage(10, 0, 50000, 12)).toEqual(52749.53);
     });
 
     it('верно считать кредит: кейс #2', () => {
-      expect(calculateTotalMortgage(10, 1000, 50000, 12).toFixed(2)).toEqual(51694.54);
+      expect(calculateTotalMortgage(10, 1000, 50000, 12)).toEqual(51694.54);
     });
 
     it('верно считать кредит: кейс #3', () => {
@@ -27,11 +27,11 @@ describe('Домашнее задание к занятию 1. «Основны�
     });
 
     it('верно считать кредит: кейс #4', () => {
-      expect(calculateTotalMortgage(10, 0, 10000, 36).toFixed(2)).toEqual(11616.19);
+      expect(calculateTotalMortgage(10, 0, 10000, 36)).toEqual(11616.19);
     });
 
     it('верно считать кредит: кейс #5', () => {
-      expect(calculateTotalMortgage(15, 0, 10000, 36).toFixed(2)).toEqual(12479.52);
+      expect(calculateTotalMortgage(15, 0, 10000, 36)).toEqual(12479.52);
     }); 
   });
 });

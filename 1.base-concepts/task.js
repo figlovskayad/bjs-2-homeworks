@@ -9,7 +9,7 @@ function solveEquation(a, b, c) {
 		arr.push(root_1, root_2);
 	} else if (D === 0) {
 		let root = -b / (2 * a)
-		array.push(root);
+		arr.push(root);
 	}
 	return arr;
 };
@@ -21,5 +21,7 @@ function calculateTotalMortgage(percent, contribution, amount, countMonths) {
 	let n = countMonths;
 	let payment = S * (P + (P / (((1 + P) ** n) - 1)));
 	let result = payment * n;
-	return result;
+	result = result.toFixed(2);
+	let sum = parseFloat(result)
+	return sum;
 }
