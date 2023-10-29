@@ -14,13 +14,13 @@ describe("Домашнее задание к занятию 2 Функции", (
   describe("Задача №2 Насадки преобразователи", () => {
     describe("Насадка суммирования элементов", () => {
       it("[] => 0", () => {
-        expect(summElementsWorker()).toEqual(0);
+        expect(sumElementsWorker()).toEqual(0);
       });
       it("[10, 10, 11, 20, 10] => 61", () => {
-        expect(summElementsWorker(10, 10, 11, 20, 10)).toEqual(61);
+        expect(sumElementsWorker(10, 10, 11, 20, 10)).toEqual(61);
       });
       it("0, 0, 0, -1, -100 => 0", () => {
-        expect(summElementsWorker(0, 0, 0, -1, -100)).toEqual(-101);
+        expect(sumElementsWorker(0, 0, 0, -1, -100)).toEqual(-101);
       });
     });
 
@@ -68,7 +68,7 @@ describe("Домашнее задание к занятию 2 Функции", (
     it("Насадка суммирования значений", () => {
       const arr = [[10, 10, 11, 20, 10], [67, 10, 2, 39, 88], [72, 75, 51, 87, 43], [30, 41, 55, 96, 62]];
       // 61, 206, 328, 284
-      expect(makeWork(arr, summElementsWorker)).toEqual(328);
+      expect(makeWork(arr, sumElementsWorker)).toEqual(328);
     });
     it("Насадка разницы элементов", () => {
       const arr = [[10, 10, 11, 20, 10], [67, 10, 2, 39, 88], [72, 75, 51, 87, 43], [30, 41, 55, 96, 62]];
